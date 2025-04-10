@@ -21,7 +21,7 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.."))
 
 EXCLUDED_NAMES = {
     ".git", ".ipynb_checkpoints", "__pycache__", "_build",
-    "_toc.yml", "_config.yml", ".DS_Store"
+    "_toc.yml", "_config.yml", ".DS_Store", "README"
 }
 EXCLUDED_SUFFIXES = {".ipynb", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".html", ".sh", ".py"}
 
