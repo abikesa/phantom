@@ -541,65 +541,43 @@ document.write(`
 <h2>🪛<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <p>Dynamic capability is not the clever flourish of innovation. It is the dignity of <a class="reference external" href="https://en.wikipedia.org/wiki/Tinker">maintenance</a> 🪛. The branches may bloom in different seasons. The roots may stretch in strange directions. But the structure remains alive not because it is perfect, but because it <a class="reference external" href="https://en.wikipedia.org/wiki/Intelligence">knows how to fail without dying</a>. This is not resilience as stoic endurance. This is resilience as intelligence. The kind of intelligence that absorbs rupture as a nutrient. That metabolizes pruning into redirection. That converts being “last” into becoming foundational.</p>
 <style>
-/* Base float frame */
+/* Float container base */
 .float-frame {
-    width: fit-content;
-    max-width: 12%;
-    min-width: 6%;
+    float: right; /* use float-left or float-center as needed */
+    display: inline-block;
+    width: 140px;       /* precise control */
+    max-width: 180px;   /* safety cap */
+    min-width: 100px;   /* minimum floor */
     height: auto;
     border: 1px solid #ccc;
-    padding: 2px 6px;
-    font-size: 12px;
+    padding: 6px 10px;
+    font-size: 13px;
     background-color: #f9f9f9;
     position: relative;
     text-align: center;
     margin: 15px;
     white-space: nowrap;
-}
-
-/* Float direction modifiers */
-.float-left  { float: left;  margin-right: 15px; margin-left: 0; }
-.float-right { float: right; margin-left: 15px; margin-right: 0; }
-.float-center {
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-    display: block;
 }
 
 /* Responsive fallback */
 @media (max-width: 768px) {
-    .float-left, .float-right, .float-center {
-        float: none;
-        width: 100% !important;
-        margin: 10px 0;
+    .float-frame {
+        float: none !important;
+        display: block;
+        width: 95vw !important;
+        max-width: 95vw !important;
+        margin: 10px auto;
         white-space: normal;
     }
 }
-
-.float-frame {
-    width: fit-content;
-    max-width: 12%;
-    min-width: 6%;
-    height: auto;
-    border: 1px solid #ccc;
-    padding: 2px 5px;
-    font-size: 12px;
-    background-color: #f9f9f9;
-    position: relative;
-    text-align: center;
-    margin: 15px;
-    white-space: nowrap;
-}
-
 
 /* Magnify icon overlay */
 .image-bubble.layered-icon {
     position: absolute;
     bottom: 8px;
     right: 8px;
-    width: 12px;
-    height: 10px;
+    width: 14px;
+    height: 12px;
     background: none;
     padding: 0;
     cursor: pointer;
@@ -636,9 +614,7 @@ document.write(`
     border-color: #007BFF;
 }
 </style>
-
-
-<div class="float-frame float-right">
+<div class="float-frame">
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p><a class="reference internal" href="../act2/chapter1.html#prometheus"><span class="std std-ref">Prometheus</span></a></p>
